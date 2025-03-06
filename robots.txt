@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ntu-nail.github.io/sitemap.xml

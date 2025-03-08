@@ -401,8 +401,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-we-launched-our-new-website-we-are-excited-to-announce-the-launch-of-our-new-website-we-hope-you-like-the-fresh-look-and-the-improved-navigation-that-will-allow-you-to-find-the-information-you-need-more-quickly-and-easily",
-          title: 'We launched our new website We are excited to announce the launch of...',
+            },},{id: "news-we-are-excited-to-announce-the-launch-of-our-new-website-we-hope-you-like-the-fresh-look-and-the-improved-navigation-that-will-allow-you-to-find-the-information-you-need-more-quickly-and-easily",
+          title: 'We are excited to announce the launch of our new website. We hope...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

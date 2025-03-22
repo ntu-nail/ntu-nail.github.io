@@ -19,8 +19,24 @@ nav_order: 7
     }
     .lab-members {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Collapse to 2 columns on medium screens */
+    @media (max-width: 900px) {
+        .lab-members {
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Collapse to 1 column on small screens */
+    @media (max-width: 600px) {
+        .lab-members {
+        grid-template-columns: 1fr;
+        }
     }
     .member-card {
         background-color: #fff;
@@ -46,9 +62,34 @@ nav_order: 7
     }
 </style>
 
-<div class="member-card">
-    <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-    <h2>Luu Anh Tuan</h2>
-    <p>Principal Investigator (PI)</p>
-</div>
+<div class="lab-members">
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
+        <h2>Luu Anh Tuan</h2>
+        <p>Principal Investigator (PI)</p>
+    </div>
 
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
+        <h2>Luu Anh Tuan</h2>
+        <p>Principal Investigator (PI)</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
+        <h2>Luu Anh Tuan</h2>
+        <p>Principal Investigator (PI)</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
+        <h2>Luu Anh Tuan</h2>
+        <p>Principal Investigator (PI)</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
+        <h2>Luu Anh Tuan</h2>
+        <p>Principal Investigator (PI)</p>
+    </div>
+</div>

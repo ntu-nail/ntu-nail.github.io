@@ -13,10 +13,9 @@ announcements:
   limit: 8 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 4 # leave blank to include all the blog posts
 ---
 
 Welcome to the NTU AI Language Group (NAIL)!
-

@@ -70,12 +70,6 @@ nav_order: 7
     </div>
 
     <div class="member-card">
-        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-        <h2>Luu Anh Tuan</h2>
-        <p>Principal Investigator (PI)</p>
-    </div>
-
-    <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Chen_Guizhen.jpg">
         <h2>Chen Guizhen</h2>
         <p>PhD Student</p>
@@ -90,6 +84,42 @@ nav_order: 7
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Dwivedi_Vijay_Prakash.jpg">
         <h2>Dwivedi Vijay Prakash</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Feng_Yichao.jpg">
+        <h2>Feng Yichao</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Hu_Zhiyuan.jpg">
+        <h2>Hu Zhiyuan</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Li_Anran.jpg">
+        <h2>Li Anran</h2>
+        <p>Postdoc</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chaoqun.jpg">
+        <h2>Liu Chaoqun</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chumin.jpg">
+        <h2>Liu Chumin</h2>
+        <p>Visiting Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Meihuizi_Jia.jpg">
+        <h2>Meihuizi Jia</h2>
         <p>PhD Student</p>
     </div>
 </div>

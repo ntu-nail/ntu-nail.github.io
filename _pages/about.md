@@ -20,4 +20,4 @@ latest_posts:
 
 Welcome to the NTU AI Language Group (NAIL)!
 
-![NAIL Group Photo](/assets/img/NAIL_GROUP_PHOTO.png)
+<img src="/assets/img/NAIL_GROUP_PHOTO.png" alt="drawing" width="90%"/>

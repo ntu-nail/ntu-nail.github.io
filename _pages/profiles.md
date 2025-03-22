@@ -47,25 +47,25 @@ nav_order: 7
 </style>
 
 <div class="member-card">
-    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Dr. Jane Doe">
+    <img src="https://ntu-nail.github.io/assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Dr. Jane Doe">
     <h2>Dr. Jane Doe</h2>
     <p>Principal Investigator (PI)</p>
 </div>
 
 <div class="member-card">
-    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of John Smith">
+    <img src="https://ntu-nail.github.io/assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of John Smith">
     <h2>John Smith</h2>
     <p>PhD Student</p>
 </div>
 
 <div class="member-card">
-    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Emily Chen">
+    <img src="https://ntu-nail.github.io/assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Emily Chen">
     <h2>Emily Chen</h2>
     <p>Postdoctoral Researcher</p>
 </div>
 
 <div class="member-card">
-    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Michael Lee">
+    <img src="https://ntu-nail.github.io/assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Michael Lee">
     <h2>Michael Lee</h2>
     <p>Visiting Scholar</p>
 </div>

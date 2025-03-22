@@ -122,4 +122,65 @@ nav_order: 7
         <h2>Meihuizi Jia</h2>
         <p>PhD Student</p>
     </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Nguyen_Thanh_Thong.jpg">
+        <h2>Nguyen_Thanh_Thong</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Nguyễn_Trần_Công_Duy.jpg">
+        <h2>Nguyễn_Trần_Công_Duy</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Pan_Fengjun.jpg">
+        <h2>Pan_Fengjun</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/WANG_ZIJIAN.jpg">
+        <h2>WANG_ZIJIAN</h2>
+        <p>Master Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Wei_Jie.jpg">
+        <h2>Wei_Jie</h2>
+        <p>Visiting Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Xiaobao_Wu.jpg">
+        <h2>Xiaobao_Wu</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Xin_Mao.jpg">
+        <h2>Xin_Mao</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Xu_Huimin.jpg">
+        <h2>Xu_Huimin</h2>
+        <p>PhD Student</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Zhao_Shuai.jpg">
+        <h2>Zhao_Shuai</h2>
+        <p>Postdoc</p>
+    </div>
+
+    <div class="member-card">
+        <img src="https://ntu-nail.github.io/assets/img/people/Zheng_Yandan.jpg">
+        <h2>Zheng_Yandan</h2>
+        <p>Postdoc</p>
+    </div>
+  
 </div>

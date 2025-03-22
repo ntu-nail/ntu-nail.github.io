@@ -2,13 +2,10 @@
 layout: page
 permalink: /people/
 title: People
-description: Members of our lab
 nav: true
 nav_order: 7
 
 ---
-
-PI: *Luu Anh Tuan*
 
 <style>
     body {
@@ -49,29 +46,27 @@ PI: *Luu Anh Tuan*
     }
 </style>
 
-<h1>Our Lab Members</h1>
-<div class="lab-members">
-    <div class="member-card">
-        <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Dr. Jane Doe">
-        <h2>Dr. Jane Doe</h2>
-        <p>Principal Investigator (PI)</p>
-    </div>
-
-    <div class="member-card">
-        <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of John Smith">
-        <h2>John Smith</h2>
-        <p>PhD Student</p>
-    </div>
-
-    <div class="member-card">
-        <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Emily Chen">
-        <h2>Emily Chen</h2>
-        <p>Postdoctoral Researcher</p>
-    </div>
-
-    <div class="member-card">
-        <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Michael Lee">
-        <h2>Michael Lee</h2>
-        <p>Visiting Scholar</p>
-    </div>
+<div class="member-card">
+    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Dr. Jane Doe">
+    <h2>Dr. Jane Doe</h2>
+    <p>Principal Investigator (PI)</p>
 </div>
+
+<div class="member-card">
+    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of John Smith">
+    <h2>John Smith</h2>
+    <p>PhD Student</p>
+</div>
+
+<div class="member-card">
+    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Emily Chen">
+    <h2>Emily Chen</h2>
+    <p>Postdoctoral Researcher</p>
+</div>
+
+<div class="member-card">
+    <img src="assets/img/Luu_Anh_Tuan.jpg" alt="Profile photo of Michael Lee">
+    <h2>Michael Lee</h2>
+    <p>Visiting Scholar</p>
+</div>
+

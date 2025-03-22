@@ -26,7 +26,6 @@ on:
       - "!lighthouse_results/**"
       - "!CONTRIBUTING.md"
       - "!CUSTOMIZE.md"
-      - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
   pull_request:
@@ -54,7 +53,6 @@ on:
       - "!lighthouse_results/**"
       - "!CONTRIBUTING.md"
       - "!CUSTOMIZE.md"
-      - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
   workflow_dispatch:

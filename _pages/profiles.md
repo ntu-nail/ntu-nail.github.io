@@ -100,7 +100,7 @@ nav_order: 7
     </div>
 
     <div class="member-card">
-        <img src="https://ntu-nail.github.io/assets/img/people/Li_Anran.jpg">
+        <img src="https://ntu-nail.github.io/assets/img/people/Li_Anran.png">
         <h2>Li Anran</h2>
         <p>Postdoc</p>
     </div>

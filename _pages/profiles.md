@@ -76,20 +76,20 @@ nav_order: 7
     </div>
 
     <div class="member-card">
-        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-        <h2>Luu Anh Tuan</h2>
-        <p>Principal Investigator (PI)</p>
+        <img src="https://ntu-nail.github.io/assets/img/people/Chen_Guizhen.jpg">
+        <h2>Chen Guizhen</h2>
+        <p>PhD Student</p>
     </div>
 
     <div class="member-card">
-        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-        <h2>Luu Anh Tuan</h2>
-        <p>Principal Investigator (PI)</p>
+        <img src="https://ntu-nail.github.io/assets/img/people/Du_Mingzhe.jpg">
+        <h2>Du Mingzhe</h2>
+        <p>PhD Student</p>
     </div>
 
     <div class="member-card">
-        <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-        <h2>Luu Anh Tuan</h2>
-        <p>Principal Investigator (PI)</p>
+        <img src="https://ntu-nail.github.io/assets/img/people/Dwivedi_Vijay_Prakash.jpg">
+        <h2>Dwivedi Vijay Prakash</h2>
+        <p>PhD Student</p>
     </div>
 </div>

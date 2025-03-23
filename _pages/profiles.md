@@ -65,8 +65,8 @@ nav_order: 7
 <div class="lab-members">
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg">
-        <h2>Luu Anh Tuan</h2>
-        <p>Principal Investigator (PI)</p>
+        <h2><a href="https://tuanluu.github.io/">Luu Anh Tuan</a></h2>
+        <p>Principal Investigator</p>
     </div>
 
     <div class="member-card">
@@ -77,7 +77,7 @@ nav_order: 7
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Du_Mingzhe.jpg">
-        <h2>Du Mingzhe</h2>
+        <h2><a href='https://mingzhe.space'>Du Mingzhe</a></h2>
         <p>PhD Student</p>
     </div>
 

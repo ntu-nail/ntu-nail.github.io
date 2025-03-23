@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: NTU AI Language Group
+subtitle: Welcome to the NTU AI Language Group (NAIL)!
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -17,7 +17,5 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 4 # leave blank to include all the blog posts
 ---
-
-Welcome to the NTU AI Language Group (NAIL)!
 
 <img src="/assets/img/NAIL_GROUP_PHOTO.jpg" alt="drawing" width="100%"/>

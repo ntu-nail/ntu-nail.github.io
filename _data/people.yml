@@ -80,6 +80,7 @@
       url: https://scholar.google.com/citations?user=nJMO2PcAAAAJ
       role: PhD Student
     - name: Zhang Zhen
+      photo: Zhang_Zhen.jpg
       role: PhD Student
     - name: Zhao Shiqian
       photo: Zhao_Shiqian.jpg
@@ -89,6 +90,7 @@
 - title: Research Associates, Research Assistants & Visiting Students
   members:
     - name: Do Duc Anh
+      photo: Do_Duc_Anh.jpg
       role: Research Associate / Assistant
 
 - title: Alumni

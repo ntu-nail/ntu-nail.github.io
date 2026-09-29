@@ -13,6 +13,7 @@
 - title: Research Fellows
   members:
     - name: Luo Haoran
+      photo: Luo_Haoran.jpg
       url: https://haoranluo.net/
       role: Research Fellow
     - name: Zhao Shuai
@@ -43,11 +44,13 @@
       url: https://scholar.google.com/citations?user=ngH-GO8AAAAJ
       role: PhD Student
     - name: Hoang Minh Nhat
+      photo: Hoang_Minh_Nhat.jpg
       url: https://nhathoang2002.github.io/
       role: PhD Student
     - name: Le Duc Dong
       role: PhD Student
     - name: Le Minh Khoi
+      photo: Le_Minh_Khoi.jpg
       url: https://tokisakikurumi2001.github.io/
       role: PhD Student
     - name: Nguyen Viet Anh
@@ -56,15 +59,19 @@
       photo: Pan_Fengjun.jpg
       role: PhD Student
     - name: Pham Viet Hoang
+      photo: Pham_Viet_Hoang.jpg
       url: https://pvhoang14.github.io/
       role: PhD Student
     - name: Srey Ponhvoan
+      photo: Srey_Ponhvoan.jpg
       url: https://ponhvoan.github.io/
       role: PhD Student
     - name: Taveekitworachai Pittawat
+      photo: Taveekitworachai_Pittawat.jpg
       url: https://petepittawat.dev/
       role: PhD Student
     - name: Vu Duc Anh
+      photo: Vu_Duc_Anh.jpg
       url: https://vuducanh0802.github.io/
       role: PhD Student
     - name: Xu Huimin
@@ -74,6 +81,7 @@
     - name: Zhang Zhen
       role: PhD Student
     - name: Zhao Shiqian
+      photo: Zhao_Shiqian.jpg
       url: https://scholar.google.com/citations?user=ZqvVrucAAAAJ
       role: PhD Student
 
@@ -85,6 +93,7 @@
 - title: Alumni
   members:
     - name: Zhang Siyue
+      photo: Zhang_Siyue.jpg
       url: https://siyue-zhang.github.io/
       role: PhD 2026, now Co-Founder & CTO of RENEPOLY
     - name: Liu Chaoqun
@@ -120,12 +129,15 @@
       url: https://vijaydwivedi.com.np/
       role: PhD 2024, now Postdoc at Stanford
     - name: Wang Weishi
+      photo: Wang_Weishi.jpg
       url: https://scholar.google.com/citations?user=P8TGNcoAAAAJ
       role: PhD 2024, now AI Data Scientist at SAP
     - name: Dong Xinshuai
+      photo: Dong_Xinshuai.jpg
       url: https://dongxinshuai.github.io/
       role: Master 2021, now PhD Student at CMU
     - name: Gan Leilei
+      photo: Gan_Leilei.jpg
       url: https://person.zju.edu.cn/ganleilei
       role: Visiting Student, now at Zhejiang University
     - name: Meihuizi Jia

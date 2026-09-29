@@ -1,3 +1,10 @@
+/* Match the theme's layer to override its important spacing utility. */
+@layer components {
+  .container[role="main"] {
+    margin-top: 1rem !important;
+  }
+}
+
 #publication-browser [hidden] {
   display: none !important;
 }
@@ -15,7 +22,16 @@
 }
 
 .publication-filters {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#publication-browser .publications {
+  margin-top: 0.5rem;
+}
+
+/* Keep the first visible year close to the filters after any selection. */
+#publication-browser .publications > h2.bibliography:nth-child(1 of h2.bibliography:not([hidden])) {
+  margin-top: 0;
 }
 
 .publication-filter-group {

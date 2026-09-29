@@ -71,7 +71,7 @@ nav_order: 7
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Chen_Guizhen.jpg">
-        <h2>Chen Guizhen</h2>
+        <h2><a href="https://scholar.google.com/citations?user=HAdzwTsAAAAJ">Chen Guizhen</a></h2>
         <p>PhD Student</p>
     </div>
 
@@ -83,55 +83,55 @@ nav_order: 7
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Dwivedi_Vijay_Prakash.jpg">
-        <h2>Dwivedi Vijay Prakash</h2>
+        <h2><a href="https://vijaydwivedi.com.np/">Dwivedi Vijay Prakash</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Feng_Yichao.jpg">
-        <h2>Feng Yichao</h2>
+        <h2><a href="https://scholar.google.com/citations?user=ngH-GO8AAAAJ">Feng Yichao</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Hu_Zhiyuan.jpg">
-        <h2>Hu Zhiyuan</h2>
+        <h2><a href="https://zhiyuanhubj.github.io/">Hu Zhiyuan</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Li_Anran.png">
-        <h2>Li Anran</h2>
+        <h2><a href="https://anranli515.github.io/AnranLi.github.io/">Li Anran</a></h2>
         <p>Postdoc</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chaoqun.jpg">
-        <h2>Liu Chaoqun</h2>
+        <h2><a href="https://liuchaoqun.github.io/">Liu Chaoqun</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chumin.jpg">
-        <h2>Liu Chumin</h2>
+        <h2><a href="https://github.com/ChorlingLau">Liu Chumin</a></h2>
         <p>Visiting Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Meihuizi_Jia.jpg">
-        <h2>Meihuizi Jia</h2>
+        <h2><a href="https://jmhz24.github.io/">Meihuizi Jia</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Nguyen_Thanh_Thong.jpg">
-        <h2>Nguyen Thanh Thong</h2>
+        <h2><a href="https://nguyentthong.github.io/">Nguyen Thanh Thong</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Nguyễn_Trần_Công_Duy.jpg">
-        <h2>Nguyễn Trần Công Duy</h2>
+        <h2><a href="https://duyngtr16061999.github.io/">Nguyễn Trần Công Duy</a></h2>
         <p>PhD Student</p>
     </div>
 
@@ -155,31 +155,31 @@ nav_order: 7
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Xiaobao_Wu.jpg">
-        <h2>Xiaobao Wu</h2>
+        <h2><a href="https://bobxwu.github.io/">Xiaobao Wu</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Xin_Mao.jpg">
-        <h2>Xin Mao</h2>
+        <h2><a href="https://maoxinn.github.io/">Xin Mao</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Xu_Huimin.jpg">
-        <h2>Xu Huimin</h2>
+        <h2><a href="https://scholar.google.com/citations?user=nJMO2PcAAAAJ">Xu Huimin</a></h2>
         <p>PhD Student</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Zhao_Shuai.jpg">
-        <h2>Zhao Shuai</h2>
+        <h2><a href="https://shuaizhao95.github.io/">Zhao Shuai</a></h2>
         <p>Postdoc</p>
     </div>
 
     <div class="member-card">
         <img src="https://ntu-nail.github.io/assets/img/people/Zheng_Yandan.jpg">
-        <h2>Zheng Yandan</h2>
+        <h2><a href="https://scholar.google.com/citations?user=EI_KU4IAAAAJ">Zheng Yandan</a></h2>
         <p>Postdoc</p>
     </div>
 </div>

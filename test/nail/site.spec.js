@@ -57,6 +57,7 @@ test("navigation and theme toggle work", async ({ page, isMobile }) => {
   if (isMobile) await page.locator(".navbar-toggler").click();
   await page.locator("nav").getByRole("link", { name: "People", exact: true }).click();
   await expect(page).toHaveURL(/\/people\/$/);
+  await page.waitForLoadState("domcontentloaded");
   if (isMobile) await page.locator(".navbar-toggler").click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
   await page.locator("#light-toggle").click();

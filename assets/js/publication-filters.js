@@ -22,7 +22,7 @@
     ["International Joint Conference on Rules and Reasoning", { short: "RuleML+RR", full: "International Joint Conference on Rules and Reasoning" }],
     ["Interspeech", { short: "IS", full: "Interspeech" }],
     ["Neurocomputing", { short: "NEUCOM", full: "Neurocomputing" }],
-    ["Preprint", { short: "Prepr.", full: "Preprints" }],
+    ["Preprint", { short: "Preprint", full: "Preprints" }],
   ]);
 
   const normalize = (text) =>

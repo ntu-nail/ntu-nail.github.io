@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 
 for (const [route, heading] of [
-  ["/", "NAIL"],
+  ["/", "Welcome to Nanyang Technological University AI Language Group!"],
   ["/people/", "People"],
   ["/publications/", "Publications"],
 ]) {
@@ -17,7 +17,8 @@ for (const [route, heading] of [
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     expect(localFailures).toEqual([]);
     if (route === "/") {
-      await expect(page.getByText("Welcome to the NTU AI Language Group (NAIL)!")).toBeVisible();
+      await expect(page.locator("nav").getByRole("link", { name: "NAIL", exact: true })).toBeVisible();
+      await expect(page.getByRole("heading", { name: "Welcome to Nanyang Technological University AI Language Group!", exact: true })).toBeVisible();
       const photo = page.locator('img[src*="NAIL_GROUP_PHOTO"]');
       await expect(photo).toBeVisible();
       await expect.poll(() => photo.evaluate((img) => img.complete && img.naturalWidth > 0)).toBe(true);

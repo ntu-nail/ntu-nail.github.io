@@ -2,7 +2,8 @@
 layout: about
 title: About
 permalink: /
-subtitle: Welcome to the NTU AI Language Group (NAIL)!
+subtitle: Welcome to Nanyang Technological University AI Language Group!
+show_navbar_brand: true
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

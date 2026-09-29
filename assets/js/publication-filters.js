@@ -11,6 +11,20 @@
   // Leave the full bibliography readable if metadata is unavailable.
   if (!items.length || items.some((item) => !item.querySelector(".publication-filter-data"))) return;
 
+  // Compact filter labels; keep the original venue keys and citation text intact.
+  const venueLabels = new Map([
+    ["BioCreative", { short: "BC", full: "BioCreative" }],
+    ["Cancer Discovery", { short: "CD", full: "Cancer Discovery" }],
+    ["Cognitive Comp.", { short: "CC", full: "Cognitive Computation" }],
+    ["Database Oxford", { short: "DB", full: "Database (Oxford)" }],
+    ["Expert Systems", { short: "EXSY", full: "Expert Systems" }],
+    ["Information Processing & Management", { short: "IPM", full: "Information Processing & Management" }],
+    ["International Joint Conference on Rules and Reasoning", { short: "RuleML+RR", full: "International Joint Conference on Rules and Reasoning" }],
+    ["Interspeech", { short: "IS", full: "Interspeech" }],
+    ["Neurocomputing", { short: "NEUCOM", full: "Neurocomputing" }],
+    ["Preprint", { short: "Prepr.", full: "Preprints" }],
+  ]);
+
   const normalize = (text) =>
     text
       .normalize("NFKD")
@@ -23,8 +37,14 @@
     const data = element.querySelector(".publication-filter-data").dataset;
     const year = data.year.trim() || "Undated";
     const venue = data.venue.trim().replace(/\s+\d{4}$/, "") || "Other";
+    const venueLabel = venueLabels.get(venue);
     const title = element.querySelector(".title")?.textContent || "";
-    return { element, year, venue, text: normalize([title, data.authors, year, venue, data.fullVenue, data.keywords].join(" ")) };
+    return {
+      element,
+      year,
+      venue,
+      text: normalize([title, data.authors, year, venue, venueLabel?.short, venueLabel?.full, data.fullVenue, data.keywords].join(" ")),
+    };
   });
 
   const groups = [...root.querySelectorAll(".publications ol.bibliography")].map((list) => ({
@@ -78,7 +98,9 @@
       update();
     });
     const options = values.map((value) => {
-      const element = button(value, "publication-tag");
+      const display = key === "venue" ? venueLabels.get(value) : null;
+      const element = button(display?.short || value, "publication-tag");
+      if (display) element.title = display.full;
       element.addEventListener("click", () => {
         if (selection.has(value)) selection.delete(value);
         else selection.add(value);

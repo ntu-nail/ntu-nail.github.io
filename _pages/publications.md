@@ -18,7 +18,7 @@ nav_order: 2
     <div class="publication-filter-tags" id="publication-year-tags"></div>
   </fieldset>
   <fieldset class="publication-filter-group" data-filter="venue">
-    <legend>Publication venues</legend>
+    <legend>Venues</legend>
     <div class="publication-filter-tags" id="publication-venue-tags"></div>
   </fieldset>
   <div class="publication-search">

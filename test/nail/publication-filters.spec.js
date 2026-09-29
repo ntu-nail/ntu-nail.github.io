@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 test("publication filters combine multiple years, venues, and search", async ({ page }) => {
   await page.goto("/publications/");
   const years = page.getByRole("group", { name: "Year", exact: true });
-  const venues = page.getByRole("group", { name: "Publication venues", exact: true });
+  const venues = page.getByRole("group", { name: "Venues", exact: true });
   const entries = page.locator(".publications .bibliography > li:visible");
   const total = await entries.count();
   await expect(years.getByRole("button", { name: "All years", exact: true })).toHaveAttribute("aria-pressed", "true");
@@ -49,7 +49,7 @@ test("publication filters expose older tags and support keyboard and dark mode",
   await page.goto("/publications/");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   const years = page.getByRole("group", { name: "Year", exact: true });
-  const venues = page.getByRole("group", { name: "Publication venues", exact: true });
+  const venues = page.getByRole("group", { name: "Venues", exact: true });
   await years.getByRole("button", { name: "More years" }).click();
   const year = years.getByRole("button", { name: "2007", exact: true });
   await year.focus();
@@ -84,7 +84,7 @@ test("publication filters preserve a readable bibliography without JavaScript", 
 test("publication filters include undated work and consolidate venue editions", async ({ page }) => {
   await page.goto("/publications/");
   const years = page.getByRole("group", { name: "Year", exact: true });
-  const venues = page.getByRole("group", { name: "Publication venues", exact: true });
+  const venues = page.getByRole("group", { name: "Venues", exact: true });
   const entries = page.locator(".publications .bibliography > li:visible");
   await years.getByRole("button", { name: "More years" }).click();
   await years.getByRole("button", { name: "Undated", exact: true }).click();

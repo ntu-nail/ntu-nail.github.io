@@ -20,7 +20,7 @@
 
 .publication-filter-group {
   min-width: 0;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1rem;
   padding: 0;
   border: 0;
 }
@@ -28,7 +28,7 @@
 .publication-filter-group legend {
   float: none;
   width: auto;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.4rem;
   padding: 0;
   font-size: 0.9rem;
   font-weight: 600;
@@ -38,21 +38,21 @@
 .publication-filter-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .publication-tag,
 .publication-expand {
   max-width: 100%;
-  min-height: 36px;
-  padding: 0.35rem 0.85rem;
+  min-height: 28px;
+  padding: 0.15rem 0.7rem;
   border: 1px solid var(--global-divider-color);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   background: var(--global-bg-color);
   color: var(--global-text-color);
   font: inherit;
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 1.25;
   overflow-wrap: anywhere;
   cursor: pointer;
 }
@@ -162,17 +162,4 @@
 .publication-empty p:last-child {
   color: var(--global-text-color);
   opacity: 0.65;
-}
-
-@media (max-width: 575px) {
-  .publication-filter-tags {
-    gap: 0.4rem;
-  }
-
-  .publication-tag,
-  .publication-expand {
-    min-height: 40px;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-  }
 }

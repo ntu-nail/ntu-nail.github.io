@@ -1,0 +1,11 @@
+{% if page.permalink == '/publications/' %}
+  <span
+    hidden
+    class="publication-filter-data"
+    data-year="{{ entry.year | default: 'Undated' | escape }}"
+    data-venue="{{ entry.abbr | default: entry.journal | default: entry.booktitle | default: 'Other' | escape }}"
+    data-full-venue="{{ entry.journal | default: entry.booktitle | escape }}"
+    data-authors="{%- for author in entry.author_array -%}{{ author.first | escape }} {{ author.last | escape }}{% unless forloop.last %}; {% endunless %}{%- endfor -%}"
+    data-keywords="{{ entry.keywords | escape }}"
+  ></span>
+{% endif %}

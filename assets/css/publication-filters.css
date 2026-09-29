@@ -1,0 +1,178 @@
+#publication-browser [hidden] {
+  display: none !important;
+}
+
+.publication-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.publication-filters {
+  margin-bottom: 1.5rem;
+}
+
+.publication-filter-group {
+  min-width: 0;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+}
+
+.publication-filter-group legend {
+  float: none;
+  width: auto;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.publication-filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-tag,
+.publication-expand {
+  max-width: 100%;
+  min-height: 36px;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.25rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.publication-tag:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.publication-tag[aria-pressed="true"] {
+  border-color: var(--global-theme-color);
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+
+.publication-expand {
+  border-color: transparent;
+  color: var(--global-theme-color);
+}
+
+.publication-expand:hover,
+.publication-clear:not(:disabled):hover {
+  text-decoration: underline;
+}
+
+.publication-search {
+  position: relative;
+}
+
+.publication-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.9rem;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  color: var(--global-text-color);
+  pointer-events: none;
+}
+
+#publication-browser #bibsearch {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  margin: 0;
+  padding: 0.65rem 0.9rem 0.65rem 2.7rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  font: inherit;
+  font-size: 1rem;
+}
+
+#publication-browser #bibsearch::placeholder {
+  color: var(--global-text-color);
+  opacity: 0.65;
+}
+
+#publication-browser button:focus-visible,
+#publication-browser #bibsearch:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.publication-filter-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.publication-result-count {
+  color: var(--global-text-color);
+  opacity: 0.65;
+}
+
+.publication-clear {
+  min-height: 36px;
+  padding: 0.25rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--global-theme-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.publication-clear:disabled {
+  color: var(--global-text-color-light);
+  cursor: default;
+}
+
+.publication-empty {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.publication-empty p:first-child {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.publication-empty p:last-child {
+  color: var(--global-text-color);
+  opacity: 0.65;
+}
+
+@media (max-width: 575px) {
+  .publication-filter-tags {
+    gap: 0.4rem;
+  }
+
+  .publication-tag,
+  .publication-expand {
+    min-height: 40px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}

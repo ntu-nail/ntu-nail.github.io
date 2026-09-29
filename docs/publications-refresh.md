@@ -9,14 +9,14 @@ All discoverable journal articles, conference/workshop papers, and preprints by 
 - [ACL Anthology author page](https://aclanthology.org/people/luu-anh-tuan/): 77 publisher BibTeX records used to correct titles, author order, venue, date, DOI, and pages.
 - arXiv landing pages were checked for current titles, authors, acceptance notes, and withdrawals. Other publisher records resolve conflicts where available.
 
-Result: **231 unique entries** (257 Scholar records − 11 exclusions − 22 duplicate/version records + 7 homepage additions). The former bibliography had 19 entries representing 18 distinct works. Each retained entry has a source URL. No API credential or raw API response is stored in this repository.
+Result: **229 unique entries** (257 Scholar records − 11 unrelated/out-of-scope records − 2 withdrawn papers − 22 duplicate/version records + 7 homepage additions). The former bibliography had 19 entries representing 18 distinct works. Each retained entry has a source URL. No API credential or raw API response is stored in this repository.
 
 ## Editorial decisions
 
 - Publisher metadata takes precedence over Scholar and the homepage. Conference years follow the event year (for example, NeurIPS 2025), not delayed indexing dates. Journal issue years are preferred over online-first dates when verified.
 - Accepted papers without final proceedings metadata keep the author-announced venue and an acceptance note; no DOI or page range is invented.
 - Three OpenReview manuscripts have no verified publication date: DEPTRAI, Debiasing Language Models Using Energy-Guided Ordinary Differential Equations, and Multi-Sample Contrastive Neural Topic Model as Multi-Task Learning. They are included under **Undated**, without implying conference acceptance.
-- [Vision-and-Language Pretraining](https://arxiv.org/abs/2207.01772) and [Tracking the Truth](https://arxiv.org/abs/2605.08974) are retained with explicit withdrawal labels. The Research Square variant of the vision-language survey is merged with the arXiv record.
+- Withdrawn papers are excluded at the site owner's request. [Vision-and-Language Pretraining](https://arxiv.org/abs/2207.01772) and [Tracking the Truth](https://arxiv.org/abs/2605.08974) were removed, including the merged Research Square variant of the vision-language survey.
 - [Towards Interpretable Federated Learning, version 1](https://arxiv.org/abs/2302.13473v1) includes Luu; version 2 has a different author list without him. The bibliography explicitly links and identifies version 1.
 - The homepage’s “MProject” entry has the same authors as CodeArena and no independently verified matching publication. The verified [CodeArena ACL paper](https://aclanthology.org/2025.acl-demo.48/) is retained; MProject is not added as a separate unverified paper.
 - Normalize the professor’s name variants to `Luu, Anh Tuan` for consistent display and emphasis. Preserve coauthor order from publisher records.
@@ -68,4 +68,4 @@ Result: **231 unique entries** (257 Scholar records − 11 exclusions − 22 dup
 
 The final review also preserved existing DOI/volume/issue/page metadata, corrected the full author lists of HyperGraphRAG and Text2NKG against NeurIPS records, and preferred the USENIX PDF author list for When Memory Becomes a Vulnerability. Read as You See uses the published WWW 2026 record ([DOI](https://doi.org/10.1145/3774904.3792570)), including its four authors and pages 1672–1683.
 
-Recheck the verified profile and author homepage, then compare DOI/arXiv identifiers and titles with the existing bibliography. Review author identity before importing a Scholar entry. Preserve withdrawn/version-specific labels unless the primary source changes. Update this audit and the page’s review date after verification.
+Recheck the verified profile and author homepage, then compare DOI/arXiv identifiers and titles with the existing bibliography. Review author identity before importing a Scholar entry. Keep withdrawn papers excluded and preserve version-specific labels unless the primary source changes. Update this audit and the page’s review date after verification.

@@ -48,9 +48,10 @@ test("publications cover early and recent work and remain searchable", async ({ 
     await expect(page.locator(".bibliography > li:visible")).toHaveCount(1);
     await expect(page.locator(".bibliography > li:visible .title")).toContainText(title);
   }
-  await page.locator("#bibsearch").fill("Tracking the Truth");
-  await expect(page.locator(".bibliography > li:visible")).toHaveCount(1);
-  await expect(page.locator(".bibliography > li:visible")).toContainText("arXiv preprint withdrawn by the authors");
+  for (const title of ["Tracking the Truth", "Vision-and-Language Pretraining"]) {
+    await page.locator("#bibsearch").fill(title);
+    await expect(page.locator(".bibliography > li:visible")).toHaveCount(0);
+  }
 });
 
 test("removed pages and build files stay unpublished", async ({ request }) => {

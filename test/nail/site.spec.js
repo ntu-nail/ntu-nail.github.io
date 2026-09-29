@@ -4,7 +4,6 @@ for (const [route, heading] of [
   ["/", "NAIL"],
   ["/people/", "People"],
   ["/publications/", "Publications"],
-  ["/projects/", "Projects"],
 ]) {
   test(`${route} preserves content, local assets, and responsive layout`, async ({ page }) => {
     const localFailures = [];
@@ -14,7 +13,7 @@ for (const [route, heading] of [
     });
     await page.goto(route);
     await expect(page.locator("h1").first()).toHaveText(heading);
-    await expect(page.locator("nav")).not.toContainText(/Plugins|Teaching|Repositories|Blog|CV/);
+    await expect(page.locator("nav")).not.toContainText(/Projects|Plugins|Teaching|Repositories|Blog|CV/);
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
     expect(localFailures).toEqual([]);
     if (route === "/") {
@@ -33,14 +32,12 @@ for (const [route, heading] of [
       await expect(page.locator(".publications")).toContainText("Mercury: A code efficiency benchmark for code large language models");
       await expect(page.locator(".bibliography > li").first()).toBeVisible();
     }
-    if (route === "/projects/") {
-      await expect(page.locator(".projects .card")).toHaveCount(3);
-    }
   });
 }
 
-test("removed demo pages and build files stay unpublished", async ({ request }) => {
+test("removed pages and build files stay unpublished", async ({ request }) => {
   for (const route of [
+    "/projects/index.html",
     "/cv/",
     "/teaching/",
     "/repositories/",

@@ -18,4 +18,22 @@ latest_posts:
   limit: 4 # leave blank to include all the blog posts
 ---
 
-<img src="/assets/img/NAIL_GROUP_PHOTO.jpg" alt="drawing" width="100%"/>
+<p><picture>
+  {% if site.imagemagick.enabled %}
+    <source
+      type="image/webp"
+      srcset="{% for width in site.imagemagick.widths %}{{ '/assets/img/NAIL_GROUP_PHOTO' | relative_url }}-{{ width }}.webp {{ width }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+      sizes="(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 }}px, calc(100vw - 30px)"
+    >
+  {% endif %}
+  <img
+    src="{{ '/assets/img/NAIL_GROUP_PHOTO.jpg' | relative_url }}"
+    alt="NTU AI Language Group (NAIL) group photo"
+    class="img-fluid"
+    width="4032"
+    height="3024"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+  >
+</picture></p>

@@ -1,0 +1,6 @@
+/* Match the theme's layer to override its important spacing utility. */
+@layer components {
+  .container[role="main"] {
+    margin-top: 1rem !important;
+  }
+}

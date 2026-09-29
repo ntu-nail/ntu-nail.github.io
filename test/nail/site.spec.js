@@ -24,13 +24,7 @@ for (const [route, heading] of [
       await expect(page.getByRole("heading", { name: "News", exact: true })).toBeVisible();
     }
     if (route === "/people/") {
-      await expect(page.locator("h2.people-heading")).toHaveText([
-        "Principal Investigator",
-        "Research Fellows",
-        "PhD Students",
-        "Research Associates, Research Assistants & Visiting Students",
-        "Alumni",
-      ]);
+      await expect(page.locator("h2.people-heading")).toHaveText(["Principal Investigator", "Research Fellows", "PhD Students", "Alumni"]);
       await expect(page.locator(".member-card")).toHaveCount(38);
       await expect(page.getByRole("link", { name: "Luu Anh Tuan", exact: true })).toHaveAttribute("href", "https://tuanluu.github.io/");
       await expect(page.getByRole("link", { name: "Du Mingzhe", exact: true })).toHaveAttribute("href", "https://mingzhe.space");

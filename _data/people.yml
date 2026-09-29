@@ -33,6 +33,9 @@
       photo: Chen_Guizhen.jpg
       url: https://scholar.google.com/citations?user=HAdzwTsAAAAJ
       role: PhD Student
+    - name: Do Duc Anh
+      photo: Do_Duc_Anh.jpg
+      role: PhD Student
     - name: Donovan Ong Yong Lin
       photo: Donovan_Ong_Yong_Lin.jpg
       role: PhD Student, Member of Technical Staff at Reka AI
@@ -86,12 +89,6 @@
       photo: Zhao_Shiqian.jpg
       url: https://scholar.google.com/citations?user=ZqvVrucAAAAJ
       role: PhD Student
-
-- title: Research Associates, Research Assistants & Visiting Students
-  members:
-    - name: Do Duc Anh
-      photo: Do_Duc_Anh.jpg
-      role: Research Associate / Assistant
 
 - title: Alumni
   members:

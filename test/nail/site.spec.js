@@ -23,6 +23,12 @@ for (const [route, heading] of [
       await expect(photo).toBeVisible();
       await expect.poll(() => photo.evaluate((img) => img.complete && img.naturalWidth > 0)).toBe(true);
       await expect(page.getByRole("heading", { name: "News", exact: true })).toBeVisible();
+      const search = page.locator("ninja-keys");
+      await expect.poll(() => search.evaluate((element) => element.data?.some((item) => item.id === "nav-people"))).toBe(true);
+      const sections = await search.evaluate((element) => element.data.map((item) => item.section));
+      expect(sections).toContain("News");
+      expect(sections).not.toContain("Books");
+      expect(sections).not.toContain("Projects");
     }
     if (route === "/people/") {
       await expect(page.locator("h2.people-heading")).toHaveText(["Principal Investigator", "Research Fellows", "PhD Students", "Alumni"]);
@@ -55,6 +61,13 @@ test("publications cover early and recent work and remain searchable", async ({ 
 test("removed pages and build files stay unpublished", async ({ request }) => {
   for (const route of [
     "/projects/index.html",
+    "/projects/1_project/",
+    "/projects/2_project/",
+    "/projects/3_project/",
+    "/books/the_godfather/",
+    "/books/2024/",
+    "/books/tag/top-100/",
+    "/books/category/crime/",
     "/cv/",
     "/teaching/",
     "/repositories/",

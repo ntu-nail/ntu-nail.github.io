@@ -5,59 +5,73 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://ntu-nail.github.io/people/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> NAIL </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/people/">People <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">People</h1> <p class="post-description"></p> </header> <article> <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 2rem;
-        background-color: #f9f9f9;
-    }
-    h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+  .people-section {
+    max-width: 1200px;
+    margin: 0 auto 2.5rem;
+  }
+  .people-section h2.people-heading {
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .lab-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Collapse to 2 columns on medium screens */
+  @media (max-width: 900px) {
     .lab-members {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        max-width: 1200px;
-        margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-    /* Collapse to 2 columns on medium screens */
-    @media (max-width: 900px) {
-        .lab-members {
-        grid-template-columns: repeat(2, 1fr);
-        }
+  /* Collapse to 1 column on small screens */
+  @media (max-width: 600px) {
+    .lab-members {
+      grid-template-columns: 1fr;
     }
-
-    /* Collapse to 1 column on small screens */
-    @media (max-width: 600px) {
-        .lab-members {
-        grid-template-columns: 1fr;
-        }
-    }
-    .member-card {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        text-align: center;
-        padding: 1rem;
-    }
-    .member-card img {
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 0.75rem;
-    }
-    .member-card h2 {
-        font-size: 1.1rem;
-        margin: 0.5rem 0 0.25rem;
-    }
-    .member-card p {
-        color: #666;
-        margin: 0;
-    }
-</style> <div class="lab-members"> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Luu_Anh_Tuan.jpg"> <h2><a href="https://tuanluu.github.io/" rel="external nofollow noopener" target="_blank">Luu Anh Tuan</a></h2> <p>Principal Investigator</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Chen_Guizhen.jpg"> <h2><a href="https://scholar.google.com/citations?user=HAdzwTsAAAAJ" rel="external nofollow noopener" target="_blank">Chen Guizhen</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Du_Mingzhe.jpg"> <h2><a href="https://mingzhe.space" rel="external nofollow noopener" target="_blank">Du Mingzhe</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Dwivedi_Vijay_Prakash.jpg"> <h2><a href="https://vijaydwivedi.com.np/" rel="external nofollow noopener" target="_blank">Dwivedi Vijay Prakash</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Feng_Yichao.jpg"> <h2><a href="https://scholar.google.com/citations?user=ngH-GO8AAAAJ" rel="external nofollow noopener" target="_blank">Feng Yichao</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Hu_Zhiyuan.jpg"> <h2><a href="https://zhiyuanhubj.github.io/" rel="external nofollow noopener" target="_blank">Hu Zhiyuan</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Li_Anran.png"> <h2><a href="https://anranli515.github.io/AnranLi.github.io/" rel="external nofollow noopener" target="_blank">Li Anran</a></h2> <p>Postdoc</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chaoqun.jpg"> <h2><a href="https://liuchaoqun.github.io/" rel="external nofollow noopener" target="_blank">Liu Chaoqun</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Liu_Chumin.jpg"> <h2><a href="https://github.com/ChorlingLau" rel="external nofollow noopener" target="_blank">Liu Chumin</a></h2> <p>Visiting Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Meihuizi_Jia.jpg"> <h2><a href="https://jmhz24.github.io/" rel="external nofollow noopener" target="_blank">Meihuizi Jia</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Nguyen_Thanh_Thong.jpg"> <h2><a href="https://nguyentthong.github.io/" rel="external nofollow noopener" target="_blank">Nguyen Thanh Thong</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Nguy%E1%BB%85n_Tr%E1%BA%A7n_C%C3%B4ng_Duy.jpg"> <h2><a href="https://duyngtr16061999.github.io/" rel="external nofollow noopener" target="_blank">Nguyễn Trần Công Duy</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Pan_Fengjun.jpg"> <h2>Pan Fengjun</h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/WANG_ZIJIAN.jpg"> <h2>WANG ZIJIAN</h2> <p>Master Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Wei_Jie.jpg"> <h2>Wei Jie</h2> <p>Visiting Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Xiaobao_Wu.jpg"> <h2><a href="https://bobxwu.github.io/" rel="external nofollow noopener" target="_blank">Xiaobao Wu</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Xin_Mao.jpg"> <h2><a href="https://maoxinn.github.io/" rel="external nofollow noopener" target="_blank">Xin Mao</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Xu_Huimin.jpg"> <h2><a href="https://scholar.google.com/citations?user=nJMO2PcAAAAJ" rel="external nofollow noopener" target="_blank">Xu Huimin</a></h2> <p>PhD Student</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Zhao_Shuai.jpg"> <h2><a href="https://shuaizhao95.github.io/" rel="external nofollow noopener" target="_blank">Zhao Shuai</a></h2> <p>Postdoc</p> </div> <div class="member-card"> <img src="https://ntu-nail.github.io/assets/img/people/Zheng_Yandan.jpg"> <h2><a href="https://scholar.google.com/citations?user=EI_KU4IAAAAJ" rel="external nofollow noopener" target="_blank">Zheng Yandan</a></h2> <p>Postdoc</p> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 NTU NAIL. </div> </footer> <script>
+  }
+  .member-card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+  }
+  .member-card img,
+  .member-card .member-initials {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 0.75rem;
+  }
+  .member-card img {
+    display: block;
+    object-fit: cover;
+  }
+  .member-card .member-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  .member-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.25rem;
+  }
+  .member-card p {
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+</style> <div class="people-section"> <h2 class="people-heading">Principal Investigator</h2> <div class="lab-members"> <div class="member-card"> <img src="/assets/img/people/Luu_Anh_Tuan.jpg" alt="Luu Anh Tuan" loading="lazy"> <h3> <a href="https://tuanluu.github.io/" rel="external nofollow noopener" target="_blank">Luu Anh Tuan</a> </h3> <p>Associate Professor</p> </div> </div> </div> <div class="people-section"> <h2 class="people-heading">Research Fellows</h2> <div class="lab-members"> <div class="member-card"> <div class="member-initials" aria-hidden="true">LH</div> <h3> <a href="https://haoranluo.net/" rel="external nofollow noopener" target="_blank">Luo Haoran</a> </h3> <p>Research Fellow</p> </div> <div class="member-card"> <img src="/assets/img/people/Zhao_Shuai.jpg" alt="Zhao Shuai" loading="lazy"> <h3> <a href="https://shuaizhao95.github.io/" rel="external nofollow noopener" target="_blank">Zhao Shuai</a> </h3> <p>Research Fellow</p> </div> <div class="member-card"> <img src="/assets/img/people/Zheng_Yandan.jpg" alt="Zheng Yandan" loading="lazy"> <h3> <a href="https://scholar.google.com/citations?user=EI_KU4IAAAAJ" rel="external nofollow noopener" target="_blank">Zheng Yandan</a> </h3> <p>Research Fellow</p> </div> </div> </div> <div class="people-section"> <h2 class="people-heading">PhD Students</h2> <div class="lab-members"> <div class="member-card"> <div class="member-initials" aria-hidden="true">CQ</div> <h3> Cao Qi </h3> <p>PhD Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Chen_Guizhen.jpg" alt="Chen Guizhen" loading="lazy"> <h3> <a href="https://scholar.google.com/citations?user=HAdzwTsAAAAJ" rel="external nofollow noopener" target="_blank">Chen Guizhen</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">DO</div> <h3> Donovan Ong Yong Lin </h3> <p>PhD Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Du_Mingzhe.jpg" alt="Du Mingzhe" loading="lazy"> <h3> <a href="https://mingzhe.space" rel="external nofollow noopener" target="_blank">Du Mingzhe</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Feng_Yichao.jpg" alt="Feng Yichao" loading="lazy"> <h3> <a href="https://scholar.google.com/citations?user=ngH-GO8AAAAJ" rel="external nofollow noopener" target="_blank">Feng Yichao</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">HM</div> <h3> <a href="https://nhathoang2002.github.io/" rel="external nofollow noopener" target="_blank">Hoang Minh Nhat</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">LD</div> <h3> Le Duc Dong </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">LM</div> <h3> <a href="https://tokisakikurumi2001.github.io/" rel="external nofollow noopener" target="_blank">Le Minh Khoi</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">NV</div> <h3> Nguyen Viet Anh </h3> <p>PhD Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Pan_Fengjun.jpg" alt="Pan Fengjun" loading="lazy"> <h3> Pan Fengjun </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">PV</div> <h3> <a href="https://pvhoang14.github.io/" rel="external nofollow noopener" target="_blank">Pham Viet Hoang</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">SP</div> <h3> <a href="https://ponhvoan.github.io/" rel="external nofollow noopener" target="_blank">Srey Ponhvoan</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">TP</div> <h3> <a href="https://petepittawat.dev/" rel="external nofollow noopener" target="_blank">Taveekitworachai Pittawat</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">VD</div> <h3> <a href="https://vuducanh0802.github.io/" rel="external nofollow noopener" target="_blank">Vu Duc Anh</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Xu_Huimin.jpg" alt="Xu Huimin" loading="lazy"> <h3> <a href="https://scholar.google.com/citations?user=nJMO2PcAAAAJ" rel="external nofollow noopener" target="_blank">Xu Huimin</a> </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">ZZ</div> <h3> Zhang Zhen </h3> <p>PhD Student</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">ZS</div> <h3> <a href="https://scholar.google.com/citations?user=ZqvVrucAAAAJ" rel="external nofollow noopener" target="_blank">Zhao Shiqian</a> </h3> <p>PhD Student</p> </div> </div> </div> <div class="people-section"> <h2 class="people-heading">Research Associates, Research Assistants &amp; Visiting Students</h2> <div class="lab-members"> <div class="member-card"> <div class="member-initials" aria-hidden="true">DD</div> <h3> Do Duc Anh </h3> <p>Research Associate / Assistant</p> </div> </div> </div> <div class="people-section"> <h2 class="people-heading">Alumni</h2> <div class="lab-members"> <div class="member-card"> <div class="member-initials" aria-hidden="true">ZS</div> <h3> <a href="https://siyue-zhang.github.io/" rel="external nofollow noopener" target="_blank">Zhang Siyue</a> </h3> <p>PhD 2026, now Co-Founder &amp; CTO of RENEPOLY</p> </div> <div class="member-card"> <img src="/assets/img/people/Liu_Chaoqun.jpg" alt="Liu Chaoqun" loading="lazy"> <h3> <a href="https://liuchaoqun.github.io/" rel="external nofollow noopener" target="_blank">Liu Chaoqun</a> </h3> <p>PhD 2026, now Research Scientist at Huawei</p> </div> <div class="member-card"> <img src="/assets/img/people/Hu_Zhiyuan.jpg" alt="Hu Zhiyuan" loading="lazy"> <h3> <a href="https://zhiyuanhubj.github.io/" rel="external nofollow noopener" target="_blank">Hu Zhiyuan</a> </h3> <p>PhD 2026, now Postdoc at MIT</p> </div> <div class="member-card"> <img src="/assets/img/people/Nguy%E1%BB%85n_Tr%E1%BA%A7n_C%C3%B4ng_Duy.jpg" alt="Nguyễn Trần Công Duy" loading="lazy"> <h3> <a href="https://duyngtr16061999.github.io/" rel="external nofollow noopener" target="_blank">Nguyễn Trần Công Duy</a> </h3> <p>PhD 2026, now Research Scientist at VinSmart Future</p> </div> <div class="member-card"> <img src="/assets/img/people/Nguyen_Thanh_Thong.jpg" alt="Nguyen Thanh Thong" loading="lazy"> <h3> <a href="https://nguyentthong.github.io/" rel="external nofollow noopener" target="_blank">Nguyen Thanh Thong</a> </h3> <p>PhD 2026, now Research Scientist at Reka</p> </div> <div class="member-card"> <img src="/assets/img/people/Xin_Mao.jpg" alt="Xin Mao" loading="lazy"> <h3> <a href="https://maoxinn.github.io/" rel="external nofollow noopener" target="_blank">Xin Mao</a> </h3> <p>Postdoc, now Research Scientist at ByteDance</p> </div> <div class="member-card"> <img src="/assets/img/people/Li_Anran.png" alt="Li Anran" loading="lazy"> <h3> <a href="https://anranli515.github.io/AnranLi.github.io/" rel="external nofollow noopener" target="_blank">Li Anran</a> </h3> <p>Postdoc, now Professor at USTC</p> </div> <div class="member-card"> <img src="/assets/img/people/Xiaobao_Wu.jpg" alt="Xiaobao Wu" loading="lazy"> <h3> <a href="https://bobxwu.github.io/" rel="external nofollow noopener" target="_blank">Xiaobao Wu</a> </h3> <p>PhD 2024, now Assistant Professor at Shanghai Jiao Tong University</p> </div> <div class="member-card"> <img src="/assets/img/people/Dwivedi_Vijay_Prakash.jpg" alt="Dwivedi Vijay Prakash" loading="lazy"> <h3> <a href="https://vijaydwivedi.com.np/" rel="external nofollow noopener" target="_blank">Dwivedi Vijay Prakash</a> </h3> <p>PhD 2024, now Postdoc at Stanford</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">WW</div> <h3> <a href="https://scholar.google.com/citations?user=P8TGNcoAAAAJ" rel="external nofollow noopener" target="_blank">Wang Weishi</a> </h3> <p>PhD 2024, now AI Data Scientist at SAP</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">DX</div> <h3> <a href="https://dongxinshuai.github.io/" rel="external nofollow noopener" target="_blank">Dong Xinshuai</a> </h3> <p>Master 2021, now PhD Student at CMU</p> </div> <div class="member-card"> <div class="member-initials" aria-hidden="true">GL</div> <h3> <a href="https://person.zju.edu.cn/ganleilei" rel="external nofollow noopener" target="_blank">Gan Leilei</a> </h3> <p>Visiting Student, now at Zhejiang University</p> </div> <div class="member-card"> <img src="/assets/img/people/Meihuizi_Jia.jpg" alt="Meihuizi Jia" loading="lazy"> <h3> <a href="https://jmhz24.github.io/" rel="external nofollow noopener" target="_blank">Meihuizi Jia</a> </h3> <p>Visiting Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Liu_Chumin.jpg" alt="Liu Chumin" loading="lazy"> <h3> <a href="https://github.com/ChorlingLau" rel="external nofollow noopener" target="_blank">Liu Chumin</a> </h3> <p>Visiting Student</p> </div> <div class="member-card"> <img src="/assets/img/people/Wei_Jie.jpg" alt="Wei Jie" loading="lazy"> <h3> Wei Jie </h3> <p>Visiting Student</p> </div> <div class="member-card"> <img src="/assets/img/people/WANG_ZIJIAN.jpg" alt="WANG ZIJIAN" loading="lazy"> <h3> WANG ZIJIAN </h3> <p>Master Student</p> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 NTU NAIL. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };

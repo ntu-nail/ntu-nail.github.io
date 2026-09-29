@@ -1,0 +1,144 @@
+# Members shown on /people/, grouped by section in display order.
+# Source of truth for the team roster: https://tuanluu.github.io/ (Teams section).
+# `photo` is a file under assets/img/people/; without it the card shows the member's initials.
+# `url` is optional; the name is only linked when it is set.
+
+- title: Principal Investigator
+  members:
+    - name: Luu Anh Tuan
+      photo: Luu_Anh_Tuan.jpg
+      url: https://tuanluu.github.io/
+      role: Associate Professor
+
+- title: Research Fellows
+  members:
+    - name: Luo Haoran
+      url: https://haoranluo.net/
+      role: Research Fellow
+    - name: Zhao Shuai
+      photo: Zhao_Shuai.jpg
+      url: https://shuaizhao95.github.io/
+      role: Research Fellow
+    - name: Zheng Yandan
+      photo: Zheng_Yandan.jpg
+      url: https://scholar.google.com/citations?user=EI_KU4IAAAAJ
+      role: Research Fellow
+
+- title: PhD Students
+  members:
+    - name: Cao Qi
+      role: PhD Student
+    - name: Chen Guizhen
+      photo: Chen_Guizhen.jpg
+      url: https://scholar.google.com/citations?user=HAdzwTsAAAAJ
+      role: PhD Student
+    - name: Donovan Ong Yong Lin
+      role: PhD Student
+    - name: Du Mingzhe
+      photo: Du_Mingzhe.jpg
+      url: https://mingzhe.space
+      role: PhD Student
+    - name: Feng Yichao
+      photo: Feng_Yichao.jpg
+      url: https://scholar.google.com/citations?user=ngH-GO8AAAAJ
+      role: PhD Student
+    - name: Hoang Minh Nhat
+      url: https://nhathoang2002.github.io/
+      role: PhD Student
+    - name: Le Duc Dong
+      role: PhD Student
+    - name: Le Minh Khoi
+      url: https://tokisakikurumi2001.github.io/
+      role: PhD Student
+    - name: Nguyen Viet Anh
+      role: PhD Student
+    - name: Pan Fengjun
+      photo: Pan_Fengjun.jpg
+      role: PhD Student
+    - name: Pham Viet Hoang
+      url: https://pvhoang14.github.io/
+      role: PhD Student
+    - name: Srey Ponhvoan
+      url: https://ponhvoan.github.io/
+      role: PhD Student
+    - name: Taveekitworachai Pittawat
+      url: https://petepittawat.dev/
+      role: PhD Student
+    - name: Vu Duc Anh
+      url: https://vuducanh0802.github.io/
+      role: PhD Student
+    - name: Xu Huimin
+      photo: Xu_Huimin.jpg
+      url: https://scholar.google.com/citations?user=nJMO2PcAAAAJ
+      role: PhD Student
+    - name: Zhang Zhen
+      role: PhD Student
+    - name: Zhao Shiqian
+      url: https://scholar.google.com/citations?user=ZqvVrucAAAAJ
+      role: PhD Student
+
+- title: Research Associates, Research Assistants & Visiting Students
+  members:
+    - name: Do Duc Anh
+      role: Research Associate / Assistant
+
+- title: Alumni
+  members:
+    - name: Zhang Siyue
+      url: https://siyue-zhang.github.io/
+      role: PhD 2026, now Co-Founder & CTO of RENEPOLY
+    - name: Liu Chaoqun
+      photo: Liu_Chaoqun.jpg
+      url: https://liuchaoqun.github.io/
+      role: PhD 2026, now Research Scientist at Huawei
+    - name: Hu Zhiyuan
+      photo: Hu_Zhiyuan.jpg
+      url: https://zhiyuanhubj.github.io/
+      role: PhD 2026, now Postdoc at MIT
+    - name: Nguyễn Trần Công Duy
+      photo: Nguyễn_Trần_Công_Duy.jpg
+      url: https://duyngtr16061999.github.io/
+      role: PhD 2026, now Research Scientist at VinSmart Future
+    - name: Nguyen Thanh Thong
+      photo: Nguyen_Thanh_Thong.jpg
+      url: https://nguyentthong.github.io/
+      role: PhD 2026, now Research Scientist at Reka
+    - name: Xin Mao
+      photo: Xin_Mao.jpg
+      url: https://maoxinn.github.io/
+      role: Postdoc, now Research Scientist at ByteDance
+    - name: Li Anran
+      photo: Li_Anran.png
+      url: https://anranli515.github.io/AnranLi.github.io/
+      role: Postdoc, now Professor at USTC
+    - name: Xiaobao Wu
+      photo: Xiaobao_Wu.jpg
+      url: https://bobxwu.github.io/
+      role: PhD 2024, now Assistant Professor at Shanghai Jiao Tong University
+    - name: Dwivedi Vijay Prakash
+      photo: Dwivedi_Vijay_Prakash.jpg
+      url: https://vijaydwivedi.com.np/
+      role: PhD 2024, now Postdoc at Stanford
+    - name: Wang Weishi
+      url: https://scholar.google.com/citations?user=P8TGNcoAAAAJ
+      role: PhD 2024, now AI Data Scientist at SAP
+    - name: Dong Xinshuai
+      url: https://dongxinshuai.github.io/
+      role: Master 2021, now PhD Student at CMU
+    - name: Gan Leilei
+      url: https://person.zju.edu.cn/ganleilei
+      role: Visiting Student, now at Zhejiang University
+    - name: Meihuizi Jia
+      photo: Meihuizi_Jia.jpg
+      url: https://jmhz24.github.io/
+      role: Visiting Student
+    - name: Liu Chumin
+      photo: Liu_Chumin.jpg
+      url: https://github.com/ChorlingLau
+      role: Visiting Student
+    - name: Wei Jie
+      photo: Wei_Jie.jpg
+      role: Visiting Student
+    - name: WANG ZIJIAN
+      photo: WANG_ZIJIAN.jpg
+      role: Master Student

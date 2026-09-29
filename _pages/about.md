@@ -19,6 +19,8 @@ latest_posts:
   limit: 4 # leave blank to include all the blog posts
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url | bust_file_cache }}">
+
 <p><picture>
   {% if site.imagemagick.enabled %}
     <source

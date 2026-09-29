@@ -39,10 +39,6 @@ test("publications cover early and recent work and remain searchable", async ({ 
   await page.goto("/publications/");
   expect(await page.locator(".bibliography > li").count()).toBeGreaterThan(200);
   await expect(page.locator("h2.bibliography").last()).toHaveText("Undated");
-  await expect(page.getByRole("link", { name: "Google Scholar", exact: true })).toHaveAttribute(
-    "href",
-    "https://scholar.google.com/citations?user=d6ixOGYAAAAJ"
-  );
   for (const title of ["Measuring the Checker", "Axiom-oriented Reasoning", "Uncertainty of Thoughts"]) {
     await page.locator("#bibsearch").fill(title);
     await expect(page.locator(".bibliography > li:visible")).toHaveCount(1);

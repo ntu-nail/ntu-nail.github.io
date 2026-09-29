@@ -29,11 +29,29 @@ for (const [route, heading] of [
       await expect(page.getByRole("link", { name: "Du Mingzhe", exact: true })).toHaveAttribute("href", "https://mingzhe.space");
     }
     if (route === "/publications/") {
-      await expect(page.locator(".publications")).toContainText("Mercury: A code efficiency benchmark for code large language models");
+      await expect(page.locator(".publications")).toContainText(/Mercury: A code efficiency benchmark for code large language models/i);
       await expect(page.locator(".bibliography > li").first()).toBeVisible();
     }
   });
 }
+
+test("publications cover early and recent work and remain searchable", async ({ page }) => {
+  await page.goto("/publications/");
+  expect(await page.locator(".bibliography > li").count()).toBeGreaterThan(200);
+  await expect(page.locator("h2.bibliography").last()).toHaveText("Undated");
+  await expect(page.getByRole("link", { name: "Google Scholar", exact: true })).toHaveAttribute(
+    "href",
+    "https://scholar.google.com/citations?user=d6ixOGYAAAAJ"
+  );
+  for (const title of ["Measuring the Checker", "Axiom-oriented Reasoning", "Uncertainty of Thoughts"]) {
+    await page.locator("#bibsearch").fill(title);
+    await expect(page.locator(".bibliography > li:visible")).toHaveCount(1);
+    await expect(page.locator(".bibliography > li:visible .title")).toContainText(title);
+  }
+  await page.locator("#bibsearch").fill("Tracking the Truth");
+  await expect(page.locator(".bibliography > li:visible")).toHaveCount(1);
+  await expect(page.locator(".bibliography > li:visible")).toContainText("arXiv preprint withdrawn by the authors");
+});
 
 test("removed pages and build files stay unpublished", async ({ request }) => {
   for (const route of [

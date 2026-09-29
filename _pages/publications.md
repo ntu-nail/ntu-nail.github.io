@@ -2,12 +2,13 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: publications by categories in reversed chronological order.
+description: Journal articles, conference papers, and preprints by Professor Luu Anh Tuan.
 nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
+Includes preprints and accepted papers, with published versions preferred where available. Withdrawn preprints are marked explicitly.
+Last updated: September 29, 2026. [Google Scholar](https://scholar.google.com/citations?user=d6ixOGYAAAAJ).
 
 <!-- Bibsearch Feature -->
 
@@ -15,6 +16,8 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query @*[year != Undated] %}
+
+{% bibliography --query @*[year = Undated] %}
 
 </div>

@@ -1,0 +1,58 @@
+name: NAIL site checks
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install build and browser dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip install nbconvert
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Audit upgrade and intentional overrides
+        run: |
+          bundle exec al-folio upgrade audit
+          bundle exec al-folio upgrade overrides audit
+      - name: Check production CSS and upgrade tooling
+        run: |
+          bash test/integration_css_minify.sh
+          bash test/integration_upgrade_cli.sh
+      - name: Build production site and purge unused CSS
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+      - name: Check NAIL pages on desktop and mobile
+        run: npm run test:site
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: nail-site-test-results
+          path: test-results/
+          if-no-files-found: ignore
